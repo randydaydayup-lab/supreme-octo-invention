@@ -1,0 +1,41 @@
+{
+  "_meta": {
+    "template_version": "1.0",
+    "task_id": "MIND-YYYYMMDD-001",
+    "description": "百度健康用户心智监测数据采集模板",
+    "instructions": [
+      "1. 将此文件另存为 MIND-[任务编号]_raw_data.json",
+      "2. 删除此 _meta 字段",
+      "3. 在 comments 数组中填入采集的评论数据",
+      "4. 每条评论必须包含 content、platform、publish_time 三个必填字段",
+      "5. 使用 jq . 命令验证JSON格式"
+    ],
+    "required_fields": ["content", "platform", "publish_time"],
+    "optional_fields": ["url", "author", "likes", "reply_count"]
+  },
+  "comments": [
+    {
+      "content": "（示例）百度健康上面的医生靠谱吗？刚注册准备试试，有点担心...",
+      "platform": "小红书",
+      "publish_time": "2026-04-10 14:30:00",
+      "url": "https://www.xiaohongshu.com/explore/示例",
+      "author": "用户XXXX",
+      "likes": 23,
+      "reply_count": 5
+    },
+    {
+      "content": "（示例）用了三次了，总体感觉还不错，医生回复比较快，价格也还好",
+      "platform": "知乎",
+      "publish_time": "2026-04-08 09:15:00",
+      "url": "https://www.zhihu.com/question/示例",
+      "author": "用户YYYY"
+    },
+    {
+      "content": "（示例）等了半小时了还没有医生接单，高峰期太慢了，体验极差！",
+      "platform": "微博",
+      "publish_time": "2026-04-12 21:00:00",
+      "url": "https://weibo.com/示例",
+      "author": "用户ZZZZ"
+    }
+  ]
+}
